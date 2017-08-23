@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Marketier Test API</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!-- BOOTSTRAP CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- LOCAL STYLE SHEETS -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JQUERY CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- UNDERSCORE CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+        <!-- REACT CDN -->
+        <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
+        <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
+
+        <!-- LOCAL SCRIPTS -->
+        <script src="javascript/globals.js"></script>
+        <script src="javascript/cookies.js"></script>
+        <script src="javascript/onready.js"></script>
+        <script src="javascript/common.js"></script>
+        <script src="javascript/ajaxcall.js"></script>
+        <script src="javascript/login.js"></script>
+        <script src="javascript/user.js"></script>
+
+    </head>
+    <body>
+        <div class= "container-fluid test-api">
+            <div class="row page-header center-text">
+                <h1>Test API</h1>
+            </div>
+            <div class="row">
+                
+                
+                <div class="col-md-4 test-api-buttons">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Login:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-info form-control" onclick= "fbLogin()">Login</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Get user data:</label>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-info form-control" onclick= "getMyData()">Get My Data</button>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label>Get user friends</label>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn btn-info form-control" onclick= "getMyFriends()">Get My Friends</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="col-md-8 response-container">
+                    <div class="row center-text">
+                        <h4>Response:</h4>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-10 col-md-push-1">
+                            <div class="form-control" id="responseData"></div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

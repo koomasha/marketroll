@@ -1,0 +1,14 @@
+gitignore.io help:
+list - lists the operating systems, programming languages and IDE input types
+:types: - creates .gitignore files for types of operating systems, programming languages or IDEs
+build/
+dist/
+nbproject/
+  build-impl.xml
+  private/
+  project.properties
+  project.xml
+build.xml
+target/
+
+src/main/webapp/WEB-INF/glassfish-web.xml
